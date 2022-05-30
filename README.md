@@ -23,13 +23,14 @@ Mencari Standar Deviasi dari data selisih pasangan pengamatan pada tabel
 > sd(data$x-data$y)
 [1] 6.359595
 ```
-Hasil
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/1A.png)
 
 #### Poin 1B
 mencari nilai t (p-value)
 ```c
 t.test(x, y, alternative = "greater", var.equal = FALSE)
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/1B.png)
 
 #### Poin 1C
 tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
@@ -37,6 +38,7 @@ tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal
 var.test(x,y)
 t.tes(x,y, alternative = "two.sided", mu=0)
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/1C.png)
 
 ### No 2
 Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan library seperti referensi pada modul).
@@ -56,6 +58,7 @@ tsum.test(
   n.x = 100
 )
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/2B.png)
 
 #### Poin 2C
 Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
@@ -63,13 +66,11 @@ kesimpulan yang di dapatkan dari soal diatas adalah mobil yang digunakan rata-ra
 
 ### No 3
 Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkanlah data berikut dari perusahaan saham tersebut.
-
-tabel
-
 Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)? Buatlah :
 
 #### Poin 3A
 H0 dan H1
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/3A.jpeg)
 
 #### Poin 3B
 Hitung Sampel Statistik
@@ -78,6 +79,7 @@ tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19,
           mean.y =2.79 , s.y = 1.32, n.y = 27, 
           alternative = "greater", var.equal = TRUE)
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/3B.png)
 
 #### Poin 3C
 Lakukan Uji Statistik (df =2)
@@ -85,12 +87,14 @@ Lakukan Uji Statistik (df =2)
 library(mosaic)
 plotDist(dist = 't', df = 2, col = "Red")
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/3C.png)
 
 #### Poin 3D
 Nilai Kritikal
 ```c
 qchisq(p = 0.05, df = 2, lower.tail = FALSE)
 ```
+![](https://github.com/LKhrsma/P2_Probstat_E_5025201034/blob/main/File%20P2/3D.png)
 
 #### Poin 3E
 Keputusan
